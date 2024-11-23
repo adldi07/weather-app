@@ -43,7 +43,7 @@ button.addEventListener('click', async ()=>{
 });
 
 async function getDatabycords(lat,long){
-    const promise = await fetch(`http://api.weatherapi.com/v1/current.json?key=d7e06e44eb3e43859ec233729242211&q=${lat},${long}&aqi=yes`);
+    const promise = await fetch(`https://api.weatherapi.com/v1/current.json?key=d7e06e44eb3e43859ec233729242211&q=${lat},${long}&aqi=yes`);
 
     return await promise.json();
 };
