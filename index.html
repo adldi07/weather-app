@@ -29,7 +29,9 @@ const cityTemp = document.getElementById('city-temp');
 const userLocation = document.getElementById('user-location');
 
 async function getData(cityName){
-    const promise = await fetch(`http://api.weatherapi.com/v1/current.json?key=d7e06e44eb3e43859ec233729242211&q=${cityName}&aqi=yes`);
+    const promise = await fetch(`https://api.weatherapi.com/v1/current.json?key=d7e06e44eb3e43859ec233729242211&q=${cityName}&aqi=yes`);
+
+    // const promise = await fetch(`http://api.weatherapi.com/v1/current.json?key=d7e06e44eb3e43859ec233729242211&q=${cityName}&aqi=yes`);
     console.log(promise);
     return await promise.json();
 };
